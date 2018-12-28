@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- method - get and post -->
+    <form action="/login/" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Enter Name</label>
+                </td>
+                <td>
+                    <input type="text" name="u_name" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="userpwd">Enter Password</label>
+                </td>
+                <td>
+                    <input type="password" name="u_pwd" id="userpwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Select City</td>
+                <td>
+                    <select name="city" id="">
+                        <option>Select City</option>
+                        <option value="ch">Chennai</option>
+                        <option value="mu">Mumbai</option>
+                        <option value="pu">Pune</option>
+                        <option value="del">Delhi</option>
+                        <option value="noi">Noida</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="m" name="gender" value="m"> <label for="m">Male</label>
+                    <input type="radio" id="f" name="gender" value="f"> <label for="f">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> MCA
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                    <!-- <button type="submit">Login</button> -->
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
