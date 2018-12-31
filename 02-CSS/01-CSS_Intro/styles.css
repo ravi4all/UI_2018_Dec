@@ -1,0 +1,15 @@
+/* h1, h2, div, img -> Selectors */
+
+
+/* color, font-size -> Properties */
+
+
+/* blue, red, 20px -> Values */
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    border: 2px solid red;
+}
