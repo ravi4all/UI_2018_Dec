@@ -1,0 +1,44 @@
+* {
+    color: #000;
+    background-color: #fff;
+}
+
+body {
+    margin: 0px;
+    background-image: url("https://i.pinimg.com/originals/91/a3/16/91a3162915a75dc6ab7973c58eb8ac0e.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    padding: 20px;
+    height: 570px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* margin-bottom: 600px; */
+}
+
+#div_1 {
+    background-image: url("https://wallpapercave.com/wp/wp1859026.jpg");
+}
+
+#div_2 {
+    background-image: url("https://st3.cricketcountry.com/wp-content/uploads/2015/09/IANS.jpg");
+}
+
+#div_3 {
+    background-image: url("http://photoartinc.com/wp-content/uploads/2018/02/ms-dhoni-fb-cover-photos-7.jpg");
+}
+
+#div_4 {
+    background-image: url("http://files.all-free-download.com//downloadfiles/wallpapers/1366_768/ms_dhoni_10246.jpg");
+}
+
+#div_5 {
+    background-image: url("https://www.rrishii-aparajita.com/wp-content/uploads/2018/11/ms-dhoni-wallpapers-inspirational-the-board-control-for-cricket-in-india-of-ms-dhoni-wallpapers.jpg");
+}
+
+#div_6 {
+    background-image: url("http://www.hdnicewallpapers.com/Walls/Big/Cricket/MS_Dhoni_in_CSK_IPL_Match_Wallpaper.jpg");
+}
