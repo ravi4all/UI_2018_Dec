@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        .col {
+            text-align: center;
+            float: left;
+            width: 49%;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Floating Example</h1>
+
+    <div id="section_1">
+        <div class="row">
+            <div class="col">
+                <h2>This is column_1</h2>
+                <div class="row">
+                    <div class="col">
+                        <h2>This is heading_1</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laboriosam optio, asperiores exercitationem quos aperiam corporis nam temporibus voluptatem, accusantium voluptatum obcaecati sint, voluptas dolorum voluptates fuga nostrum cumque odit.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h2>This is heading_1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ducimus necessitatibus dignissimos quod delectus doloribus aperiam ipsam debitis neque, ratione asperiores, harum veritatis voluptate doloremque. Numquam magnam nisi sit quas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>This is column_2</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

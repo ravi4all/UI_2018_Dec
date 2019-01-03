@@ -1,0 +1,28 @@
+/* Pseudo Elements - after and before */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    /* background-color: lightblue; */
+    width: 40%;
+    float: left;
+}
+
+.col-2 {
+    background-color: lightcoral;
+    float: right;
+    width: 40%;
+}
+
+.blank {
+    clear: both;
+}
+
+.div_1 {
+    background-color: lightgreen;
+    /* clear: both; */
+}
