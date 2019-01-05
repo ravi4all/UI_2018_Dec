@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        
+        .menu>li {
+            display: inline-block;
+            background-color: lightblue;
+            width: 12%;
+            text-align: center;
+            position: relative;
+        }
+        
+        a {
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            position: absolute;
+            background-color: lightcoral;
+            width: 100%;
+            display: none;
+        }
+        
+        ul li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Display</h1>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li>
+            <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Item_1</a></li>
+                    <li><a href="#">Item_2</a></li>
+                    <li><a href="#">Item_3</a></li>
+                    <li><a href="#">Item_4</a></li>
+                    <li><a href="#">Item_5</a></li>
+                    <li><a href="#">Item_6</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Kids</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Item_1</a></li>
+                    <li><a href="#">Item_2</a></li>
+                    <li><a href="#">Item_3</a></li>
+                    <li><a href="#">Item_4</a></li>
+                    <li><a href="#">Item_5</a></li>
+                    <li><a href="#">Item_6</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Sports</a></li>
+        <li>
+            <a href="#">Books</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Item_1</a></li>
+                    <li><a href="#">Item_2</a></li>
+                    <li><a href="#">Item_3</a></li>
+                    <li><a href="#">Item_4</a></li>
+                    <li><a href="#">Item_5</a></li>
+                    <li><a href="#">Item_6</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">More</a></li>
+    </ul>
+
+</body>
+
+</html>
