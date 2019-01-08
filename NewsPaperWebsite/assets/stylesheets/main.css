@@ -1,0 +1,76 @@
+/* Global Settngs */
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.text-center {
+    text-align: center
+}
+
+.w-100 {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+
+/* Global Classes and Ids */
+
+#header {
+    background-color: #ffde2f;
+}
+
+#header ul li {
+    display: inline-block;
+}
+
+#main-navigation {}
+
+#banner {}
+
+#content {}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
