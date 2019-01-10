@@ -2,6 +2,7 @@
 
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -39,6 +40,44 @@ ul {
     width: 100%;
 }
 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7 {
+    padding: 0px 15px;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+.col-6 {
+    width: 65%;
+}
+
+.col-7 {
+    width: 75%;
+}
+
 h1,
 h2,
 h3,
@@ -63,11 +102,67 @@ p {
     display: inline-block;
 }
 
+#header ul li a {
+    color: #000;
+}
+
+#hamburger-menu {
+    margin: 0px 10px;
+}
+
+#header .menu-btn {
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+}
+
+#header .menu-btn .line {
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-bottom: 5px;
+    background-color: #000;
+}
+
+#header .logo {
+    padding-top: 10px;
+}
+
+#header .user-section {
+    text-align: right;
+    padding: 20px 0px;
+}
+
+#header .user-section ul li {
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 #main-navigation {}
+
+#main-navigation ul li {
+    margin: 0px 12px;
+    padding: 25px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 #banner {}
 
-#content {}
+#content {
+    padding: 15px 0px;
+}
+
+#section_1 .main_news {
+    /* margin: 0px 10px; */
+}
+
+#section1 .news_list li {
+    display: inline-block;
+    width: 23%;
+    margin-left: 10px;
+}
 
 #main {}
 
