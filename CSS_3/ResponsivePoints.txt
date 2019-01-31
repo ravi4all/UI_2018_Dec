@@ -1,0 +1,8 @@
+1200px > = extra large - desktop - 	col-xl-*
+992px >  = large       - laptop  	col-lg-*
+768px >  = medium      - tabs		col-md-*
+768px <  = small       - mobile		col-sm-*
+
+1024px
+640px
+480px

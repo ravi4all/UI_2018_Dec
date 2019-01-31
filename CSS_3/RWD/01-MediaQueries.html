@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .col {
+            background-color: lightblue;
+            height: 200px;
+            width: 15%;
+            margin: 0px 5px 20px;
+        }
+        
+        @media(max-width: 1200px) {
+            h1 {
+                text-align: center;
+                color: red;
+            }
+            .col {
+                width: 31%;
+            }
+        }
+        
+        @media(max-width: 992px) {
+            .col {
+                width: 48%;
+            }
+        }
+        
+        @media(max-width:640px) {
+            .col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Media Queries</h1>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+</body>
+
+</html>
