@@ -51,8 +51,21 @@ figure {
     margin: 0 auto;
 }
 
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        width: 768px;
+    }
+}
+
 .row {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .justify-between {
@@ -156,6 +169,15 @@ p {
     font-size: 14px;
 }
 
+@media(max-width: 992px) {
+    #header .row {
+        flex-wrap: wrap;
+    }
+    #header .col-1 {
+        width: 100%;
+    }
+}
+
 #main-navigation {
     background-color: #3C383E;
 }
@@ -203,6 +225,63 @@ p {
     padding: 12px 8px;
 }
 
+.menu-btn {
+    position: absolute;
+    display: block;
+    padding: 10px;
+    top: 25%;
+    left: 44%;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    pointer-events: none;
+    display: none;
+}
+
+.menu-btn .line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 2px;
+}
+
+#main-navigation input[value='toggle'] {
+    position: absolute;
+    left: 44%;
+    top: 24%;
+    height: 38px;
+    width: 35px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+@media(max-width:992px) {
+    .menu-btn {
+        display: block;
+    }
+    #main-navigation ul,
+    #main-navigation .row {
+        display: block;
+    }
+    #main-navigation .nav_wrapper {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        height: 100%;
+        width: 20%;
+        transition: 1s;
+        transform: translateX(-100%);
+        background-color: #3C383E;
+        z-index: 100;
+    }
+    #main-navigation .category {
+        width: 100%;
+    }
+    #main-navigation input[value='toggle']:checked~.nav_wrapper {
+        transform: translateX(0%);
+    }
+}
+
 #section_1 .nav_list {
     width: 23%;
 }
@@ -217,6 +296,12 @@ p {
     color: #30323a;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+@media(max-width:992px) {
+    #section_1 .nav_list {
+        display: none;
+    }
 }
 
 #banner {
@@ -290,6 +375,12 @@ p {
 
 #banner .desc h3 {
     color: #fff;
+}
+
+@media(max-width:992px) {
+    #banner {
+        width: 100%;
+    }
 }
 
 .title {
