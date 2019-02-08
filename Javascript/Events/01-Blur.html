@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Blur Event</h1>
+
+    <input type="text" placeholder="Enter Name" onblur="callBlur(this)">
+    <span id="res"></span>
+
+    <script>
+        function callBlur(obj) {
+            // alert("Blur Called...");
+            var username = obj.value;
+            var span = document.getElementById("res");
+            if (username == "") {
+                span.innerHTML = "Cannot leave this field blank";
+                span.style.color = 'red';
+            } else {
+                span.innerHTML = "Great..!!!";
+                span.style.color = 'green';
+            }
+        }
+    </script>
+</body>
+
+</html>
