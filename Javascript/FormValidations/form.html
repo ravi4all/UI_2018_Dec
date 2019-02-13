@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        .strength {
+            display: inline-block;
+            height: 20px;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+
+    <!-- Blank Field -->
+    <!-- Password Strength -->
+    <!-- Password Confirmation -->
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input id="box_1" type="text" placeholder="Enter name">
+                </td>
+                <td>
+                    <span id="err_1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input id="box_2" type="text" placeholder="Enter Email">
+                </td>
+                <td>
+                    <span id="err_2"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input id="box_3" type="password" placeholder="Enter Password">
+                </td>
+                <td>
+                    <span id="err_3"></span>
+                    <span class="strength"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input id="box_4" type="password" placeholder="Confirm Password">
+                </td>
+                <td>
+                    <span id="err_4"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

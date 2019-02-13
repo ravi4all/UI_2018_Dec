@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div_1 {
+            height: 500px;
+            margin-bottom: 100px;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg")
+        }
+        
+        #content {
+            display: flex;
+            overflow: hidden;
+            text-align: center;
+            justify-content: center;
+            /* width: 48%; */
+        }
+        
+        #section_1 img {
+            transform: translateX(-200%) rotateY(0deg);
+        }
+        
+        #section_2 img {
+            transform: translateX(200%) rotateY(0deg);
+        }
+        
+        #section_1 .animate,
+        #section_2 .animate {
+            transform: translateX(0%) rotateY(360deg);
+        }
+        
+        img {
+            width: 70%;
+            transition: 1s;
+            max-height: 400px;
+        }
+    </style>
+    <script src="mouseEvents.js"></script>
+</head>
+
+<body>
+
+    <!-- http://www.spokespedicabs.com/ -->
+
+    <h1>MouseEvent Effects</h1>
+
+    <div id="div_1">
+    </div>
+
+    <div id="content">
+        <section id="section_1">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </section>
+        <section id="section_2">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </section>
+    </div>
+
+</body>
+
+</html>

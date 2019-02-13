@@ -6,7 +6,7 @@
 window.addEventListener("load", initEvents);
 
 function initEvents() {
-    console.log("Init Events Called...");
+    console.log("Init Event Called...");
     document.getElementById("btn").addEventListener('click', showUser);
 }
 
