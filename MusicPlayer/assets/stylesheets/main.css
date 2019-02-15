@@ -1,0 +1,90 @@
+/* Global Settngs */
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.text-center {
+    text-align: center
+}
+
+.w-100 {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+audio {
+    width: 100%;
+}
+
+
+/* Global Classes and Ids */
+
+#header {}
+
+#main-navigation {}
+
+#songsList li {
+    background-color: #f8f8f8;
+    width: 50%;
+    margin-bottom: 2px;
+    padding: 8px;
+}
+
+#songsList li span {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#songsList li:hover {
+    background-color: #e8e8e8;
+}
+
+#songsList li img {
+    width: 10%;
+}
+
+#songsList li .songName {
+    cursor: pointer;
+}
+
+#footer {}
