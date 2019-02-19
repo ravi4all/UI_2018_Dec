@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <title>Hello, world!</title>
+    <title>Music App</title>
 
     <script src="assets/javascripts/songs.js"></script>
     <script src="assets/javascripts/main.js"></script>
+    <script src="assets/javascripts/playList.js"></script>
 </head>
 
 <body>
@@ -25,27 +26,53 @@
             <audio controls id="audio">
                 <source src="">
             </audio>
+            <div class="player">
+                <div class="buttons">
+                    <button id="playSong" class="btn icon play-icon">
+                            </button>
+                    <button id="pauseSong" class="btn icon pause-icon">
+                            </button>
+                    <button id="stopSong" class="btn icon stop-icon">
+                            </button>
+                </div>
+                <div class="range">
+                    <input type="range" id="slider" value="0">
+                    <span id="timeLeft">00</span>
+                </div>
+            </div>
         </section>
 
-        <section id="featuredSongs">
-            <!-- <ul>
-                <li>
-                    <a href="#">bang-bang</a>
-                </li>
-                <li>
-                    <a href="#">faded</a>
-                </li>
-                <li>
-                    <a href="#">Galti</a>
-                </li>
-                <li>
-                    <a href="#">Na Ja</a>
-                </li>
-            </ul> -->
-            <ul id="songsList">
+        <div class="row">
+            <div class="col-lg-6">
+                <section id="featuredSongs">
+                    <h2>Featured Songs</h2>
+                    <!-- <ul>
+                                <li>
+                                    <a href="#">bang-bang</a>
+                                </li>
+                                <li>
+                                    <a href="#">faded</a>
+                                </li>
+                                <li>
+                                    <a href="#">Galti</a>
+                                </li>
+                                <li>
+                                    <a href="#">Na Ja</a>
+                                </li>
+                            </ul> -->
+                    <ul id="songsList">
 
-            </ul>
-        </section>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <h2>Playlist</h2>
+                <button class="btn btn-warning" id="save">Save to Playlist</button>
+                <ul id="playList">
+
+                </ul>
+            </div>
+        </div>
 
     </div>
 

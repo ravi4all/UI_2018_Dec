@@ -54,6 +54,7 @@ p {
 
 audio {
     width: 100%;
+    display: none;
 }
 
 
@@ -63,26 +64,82 @@ audio {
 
 #main-navigation {}
 
-#songsList li {
-    background-color: #f8f8f8;
-    width: 50%;
-    margin-bottom: 2px;
-    padding: 8px;
+.icon {
+    display: inline-block;
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+    margin: 0px 5px;
+    background-color: lightgray;
+    background-size: 175px 173px;
+    /* background-size: 90% 90%; */
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-image: url("http://www.myiconfinder.com/uploads/iconsets/256-256-46c8ef7ada75656abe6b290f2931fc6c.png");
 }
 
+.play-icon {
+    background-position: -134px 7px;
+}
+
+.pause-icon {
+    background-position: -64px 7px;
+}
+
+.stop-icon {
+    background-position: 6px 7px;
+}
+
+.player {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.player .buttons {
+    width: 22%;
+}
+
+.player .range {
+    padding-top: 20px;
+    width: 73%;
+}
+
+.player input[type='range'] {
+    width: 90%;
+}
+
+.playListbtn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+#playList li,
+#songsList li {
+    background-color: #f8f8f8;
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 8px;
+    position: relative;
+}
+
+#playList li span,
 #songsList li span {
     display: inline-block;
     margin: 0px 10px;
 }
 
+#playList li:hover,
 #songsList li:hover {
     background-color: #e8e8e8;
 }
 
+#playList li img,
 #songsList li img {
     width: 10%;
 }
 
+#playList li .songName,
 #songsList li .songName {
     cursor: pointer;
 }

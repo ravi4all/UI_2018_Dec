@@ -1,0 +1,160 @@
+var obj = {'song_id':101,'song_name':'Bang Bang'}
+undefined
+obj
+{song_id: 101, song_name: "Bang Bang"}
+function Song(id,name) {
+	this.id = id;
+	this.name = name;
+}
+undefined
+typeof(Son)
+"undefined"
+typeof(Song)
+"function"
+typeof(obj)
+"object"
+obj instanceof Object
+true
+typeof(Object)
+"function"
+var obj_1 = new Song(101,'bang bang');
+undefined
+obj_1
+Song {id: 101, name: "bang bang"}
+var playList = [];
+undefined
+playList.push(obj_1)
+1
+playList
+[Song]0: Song {id: 101, name: "bang bang"}length: 1__proto__: Array(0)
+songsList
+(4) [{…}, {…}, {…}, {…}]0: {song_id: 1, song_name: "Bang Bang - Title Track", song_url: "assets/songs/bang-bang.mp3", song_thumb: "https://m.media-amazon.com/images/M/MV5BNjA3ZDkyMj…ZDI4Mzg1YzhjXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"}1: {song_id: 2, song_name: "Faded", song_url: "assets/songs/faded.mp3", song_thumb: "https://2.bp.blogspot.com/-zEGSruGyqNA/WGS2SLBupwI…cB/s1600/alam-walker-faded-song-lyrics-750750.jpg"}2: {song_id: 3, song_name: "Fifa World Cup - Wavin Flag", song_url: "assets/songs/fifa world cup.mp3", song_thumb: "http://images.genius.com/2d335571e608b43f30bd8a89e1fa6d38.1000x1000x1.jpg"}3: {song_id: 4, song_name: "Linkin Park - Faint", song_url: "assets/songs/linkin_park-faint.mp3", song_thumb: "https://m.media-amazon.com/images/M/MV5BMjlmYjExMW…NzkyNDA5ZjdkXkEyXkFqcGdeQXVyNTk1NTMyNzM@._V1_.jpg"}length: 4__proto__: Array(0)
+var obj = {
+	id : 101,
+	name : 'Ram',
+	sal : 25000,
+	bio : function() {
+		console.log(id,name,sal);
+	}
+}
+undefined
+obj.name
+"Ram"
+obj.bio()
+VM2392:6 Uncaught ReferenceError: id is not defined
+    at Object.bio (<anonymous>:6:15)
+    at <anonymous>:1:5
+bio @ VM2392:6
+(anonymous) @ VM2425:1
+var obj = {
+	id : 101,
+	name : 'Ram',
+	sal : 25000,
+	bio : function() {
+		console.log(this.id,this.name,this.sal);
+	}
+}
+undefined
+obj.bio()
+VM2585:6 101 "Ram" 25000
+undefined
+var obj = {
+	id : 101,
+	name : 'Ram',
+	sal : 25000,
+	bio : function() {
+		return function() {
+			console.log(this.id,this.name,this.sal);
+		}
+	}
+}
+undefined
+obj.bio()
+ƒ () {
+			console.log(this.id,this.name,this.sal);
+		}
+obj.bio()()
+VM2673:7 undefined "" undefined
+undefined
+var obj = {
+	id : 101,
+	name : 'Ram',
+	sal : 25000,
+	bio : function() {
+		var that = this;
+		return function() {
+			console.log(that.id,that.name,that.sal);
+		}
+	}
+}
+undefined
+obj.bio()
+ƒ () {
+			console.log(that.id,that.name,that.sal);
+		}
+obj.bio()()
+VM2793:8 101 "Ram" 25000
+undefined
+function add() {
+	var x = 0;
+	return x += 1;
+}
+undefined
+add()
+1
+add()
+1
+add()
+1
+var x = 0;
+undefined
+function add() {
+	return x += 1;
+}
+undefined
+add()
+1
+add()
+2
+add()
+3
+function add() {
+	return x += 1;
+}
+undefined
+function add() {
+	var x = 0
+	function inc() {
+		return x += 1;
+	}
+}
+undefined
+add()
+undefined
+function add() {
+	var x = 0
+	return function() {
+		return x += 1;
+	}
+}
+undefined
+add()
+ƒ () {
+		return x += 1;
+	}
+add()()
+1
+add()()
+1
+add()()
+1
+var a = add();
+undefined
+a()
+2
+a()
+3
+a()
+4
+a()
+5

@@ -1,0 +1,62 @@
+var empList = [{'id':101,'name':'Ram','sal':25000},{'id':102,'name':'Lakhan','sal':28000},{'id':103,'name':'Bharat','sal':15000},{'id':104,'name':'Ramesh','sal':55000},{'id':105,'name':'Raman','sal':12000}]
+undefined
+empList
+(5) [{…}, {…}, {…}, {…}, {…}]
+for(var i = 0; i < empList.length; i++) {
+	if (empList[i].sal < 25000) {
+		console.log(empList[i]);
+	}
+}
+VM1517:3 {id: 103, name: "Bharat", sal: 15000}
+VM1517:3 {id: 105, name: "Raman", sal: 12000}
+undefined
+empList.filter(function(obj){
+	return obj.sal < 25000;
+})
+(2) [{…}, {…}]
+function even(n) {
+	return n % 2 == 0;
+}
+undefined
+even(5)
+false
+var numbers = [2,4,5,7,8,45,67,78,11,45,8,2]
+undefined
+evenNumbers = []
+[]
+for(i = 0; i < numbers.length; i++) {
+	evenNumbers.push(even(numbers[i]));
+}
+12
+evenNumbers
+(12) [true, true, false, false, true, false, false, true, false, false, true, true]0: true1: true2: false3: false4: true5: false6: false7: true8: false9: false10: true11: truelength: 12__proto__: Array(0)
+evenNumbers = []
+[]
+for(i = 0; i < numbers.length; i++) {
+	if(even(numbers[i]){
+		evenNumbers.push(numbers[i]);
+	}
+}
+VM1977:2 Uncaught SyntaxError: Unexpected token {
+for(i = 0; i < numbers.length; i++) {
+	if(even(numbers[i])){
+		evenNumbers.push(numbers[i]);
+	}
+}
+6
+evenNumbers
+(6) [2, 4, 8, 78, 8, 2]
+numbers.filter(even, numbers)
+(6) [2, 4, 8, 78, 8, 2]
+function tempConv(c) {
+	return 9/5 * c + 32
+}
+undefined
+tempConv(34.5)
+94.1
+temp = [32.3,34.5,36.5,28.7,22.4,26.7]
+(6) [32.3, 34.5, 36.5, 28.7, 22.4, 26.7]
+temp.map(tempConv)
+(6) [90.13999999999999, 94.1, 97.7, 83.66, 72.32, 80.06]
+a = []
+[]

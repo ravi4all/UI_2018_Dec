@@ -22,3 +22,7 @@ function calc() {
     var result = eval(expression);
     document.getElementById("result").value = result;
 }
+
+function sayHello(obj) {
+    console.log("Blur Called...", obj);
+}
