@@ -1,0 +1,28 @@
+body {
+    background-color: #F8F9FA;
+}
+
+img {
+    width: 50%;
+    max-height: 500px;
+}
+
+#productsList {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#productsList li {
+    width: 30%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#productsList li span {
+    display: block;
+    margin: 10px 0px;
+}
