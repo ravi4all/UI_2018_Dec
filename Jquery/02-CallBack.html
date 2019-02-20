@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>CallBack</h1>
+
+    <button>Like</button> <br> <br>
+    <input type="text" placeholder="Write something here" id="box_1">
+    <button onclick="comment()">Comment</button>
+    <h2 id="iter"></h2>
+    <h2>Comment is : <span id="span"></span></h2>
+    <script>
+        function comment() {
+            var k = 0;
+            for (var i = 0; i < 100000; i++) {
+                for (var j = 0; j < 100000; j++) {
+                    k += i + j;
+                }
+            }
+            document.querySelector("#iter").innerHTML = "Loop Completed..." + k;
+            var comm = document.querySelector("#box_1").value;
+            document.querySelector("#span").innerHTML = comm;
+        }
+    </script>
+</body>
+
+</html>
