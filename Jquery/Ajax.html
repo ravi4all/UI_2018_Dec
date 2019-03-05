@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ajax Using Jquery</h1>
+
+    <button onclick="loadData()">Load Ajax</button>
+    <div id="date"></div>
+
+    <input type="text" placeholder="Enter Email Id" name="useremail" onblur="checkEmail()" id="box_1">
+    <input type="submit">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        function loadData() {
+            // $.get('data.json', function(data) {
+            //     console.log(data);
+            // });
+            // $.getJSON('data.json', function(data) {
+            //     console.log(data);
+            // });
+            $.ajax({
+                'method': 'get',
+                'url': 'data.json',
+                'success': function(data) {
+                    console.log(data);
+                }
+            })
+        }
+
+        function checkEmail() {
+            var userId = $("#box_1").val();
+            $.ajax({
+                'method': 'get',
+                'url': 'emails.json',
+                'success': function(data) {
+                    // console.log(data.data);
+                    var ids = data.data;
+                    ids.forEach(function(obj) {
+                        if (obj.id == userId) {
+                            console.log("Id Already Exist");
+                        } else {
+                            console.log("Valid Id");
+                        }
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
